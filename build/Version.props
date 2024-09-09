@@ -5,6 +5,10 @@
 
 		<AvaloniaVersionThatLibrariesUsed>11.1.2</AvaloniaVersionThatLibrariesUsed>
 		<AvaloniaVersionThatSampleUsed>11.1.2</AvaloniaVersionThatSampleUsed>
+		
+		<ProLibVersion>0.0.1</ProLibVersion>
+		<ProNugetPackageVersion>$(ProLibVersion)-preview.1</ProNugetPackageVersion>
+		
 		<LibVersion>0.0.1</LibVersion>
 		<NugetPackageVersion>$(LibVersion)-local.1</NugetPackageVersion>
 		<NugetPackageVersion>$(LibVersion)-preview.1</NugetPackageVersion>

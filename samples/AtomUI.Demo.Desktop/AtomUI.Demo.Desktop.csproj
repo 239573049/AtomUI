@@ -26,12 +26,16 @@
         <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" />
         <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Nlnet.Avalonia.DevTools" />
         <PackageReference Include="CommunityToolkit.Mvvm" />
+
+        <PackageReference Include="AtomUI.Pro.Controls" Condition=" '$(SolutionName)' == 'AtomUI' "/>
     </ItemGroup>
 
-    <ItemGroup>
+    <ItemGroup>        
         <ProjectReference Include="..\..\src\AtomUI.Controls\AtomUI.Controls.csproj" />
         <ProjectReference Include="..\..\src\AtomUI.Icon.AntDesign\AtomUI.Icon.AntDesign.csproj" />
         <ProjectReference Include="..\..\src\AtomUI.Theme\AtomUI.Theme.csproj" />
+
+        <ProjectReference Include="..\..\..\src\AtomUI.Pro.Controls\AtomUI.Pro.Controls.csproj" Condition=" '$(SolutionName)' == 'AtomUI.Pro' "/>
     </ItemGroup>
     
 </Project>
